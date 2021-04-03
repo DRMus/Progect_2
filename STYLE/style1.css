@@ -1,0 +1,293 @@
+body{
+	background-color: black;
+	margin: 0;
+}
+
+.header {
+	background-color: #fff;
+	height: 72px;
+	margin: 0 auto;
+	border: 2px solid #555555;
+	z-index: 1000;
+}
+
+.icon {
+	width: 85px;
+	height: 58px;
+}
+
+.menu {
+	margin-top: 4px;
+	margin-left: 17px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	display: flex;
+	font-size: 16px;
+}
+
+.url {
+	display: flex;
+	list-style-type: none;
+}
+
+.url li {
+	margin-left: 40px;
+}
+
+.url a {
+	color: #000;
+	text-decoration: none;
+}
+
+.selected {
+	font-weight: normal;
+	background-color: black;
+	border-radius: 30px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.selected a{
+	color: #fff;
+}
+
+.about{
+	background: url("../img/UL.jpg");
+	background-size: cover;
+	background-attachment: local; 
+	background-position: center;
+	margin: 0 auto;
+	padding-bottom: 300px;
+	cursor: pointer;
+	transition: background 0.7s;
+}
+
+.content{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 230px;
+	margin-left: 30px;
+
+}
+
+
+.viz {
+	background: url("../img/viz.jpg");
+	background-size: cover;
+	background-attachment: local;
+	background-position: right;
+	padding-bottom: 300px;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: background 0.7s;
+}
+
+.viz:hover {
+	background: url("../img/viz.jpg"), rgba(0,0,0,0.4);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-attachment: local;
+	background-position: center;
+	background-position: right;
+	font-size: 70px;
+}
+
+
+.about:hover {
+	background: url("../img/UL.jpg"), rgba(0,0,0,0.4);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: right;
+	background-attachment: local;
+	background-position: center;
+}
+
+.menu .show {
+	display: block;
+	position: absolute;
+	margin-top: 70px;
+	margin-left: -20px;
+	background-color: rgba(255, 255, 255, 1);
+	padding-right: 30%;
+	border-radius: 0  0 30px 0;
+	padding-bottom: 15px;
+	border: black 2px solid;
+	transition: all 0.7s ease;
+}
+.menu .show li {
+	margin-top: 20px;
+	font-size: 20px;
+	margin-left: -20px;
+}
+.show.show-open {
+	left: 0;
+}
+
+
+@media screen and (min-width: 0) {
+	.menu-gamb {
+		width: 65px;
+		height: 33px;
+		margin-top: 15px;
+		margin-left: -5px;
+		display:flex;
+	}
+
+	.menu {
+		font-size: 16px;
+	}
+	.about{
+		padding-bottom: 150px;
+	}
+	.content {
+		padding-top: 150px;
+	}
+	.viz{
+		padding-bottom: 150px;
+	}
+	.url {
+		display: none;
+	}
+	.icon {
+		margin:0 0;
+		margin-left: auto;
+	}
+	.about h1{
+		margin-top: -40px;
+		margin-bottom: 0;
+		font-size: 20px;
+		text-shadow: black 0 0 6px;
+	}
+	
+	.about p{
+		font-style: normal;
+		font-size: 10px;
+		text-shadow: black 0 0 6px;
+	}
+	.viz h1{
+		margin-top: -40px;
+		margin-bottom: 0;
+		font-size: 20px;
+		text-shadow: black 0 0 6px;
+	}
+	
+	.viz p{
+		font-style: normal;
+		font-size: 10px;
+		text-shadow: black 0 0 6px;
+	}
+}
+@media screen and (min-width: 576px) {
+	.about h1{
+		font-size: 25px;
+	}
+	.icon {
+		margin:0 auto;
+	}
+	.about p{
+		font-size: 15px;
+	}
+	.viz h1{
+		font-size: 25px;
+	}
+	.viz p{
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.about h1{
+		font-size: 35px;
+	}
+	
+	.about p{
+		font-size: 25px;
+	}
+	.viz h1{
+		font-size: 35px;
+	}
+	
+	.viz p{
+		font-size: 25px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.url {
+		display: flex;
+	}
+	.menu-gamb {
+		display: none;
+	}
+	.icon {
+		margin: 0;
+	}
+	.about h1{
+		font-size: 45px;
+	}
+	
+	.about p{
+		font-size: 35px;
+	}
+	.viz h1{
+		font-size: 45px;
+	}
+	
+	.viz p{
+		font-size: 35px;
+	}
+	.viz {
+		padding-bottom: 160px;
+	}
+	.about {
+		padding-bottom: 160px;
+	}
+}
+@media screen and (min-width: 1270px) {
+	.about h1{
+		font-size: 50px;
+	}
+	
+	.about p{
+		font-size: 40px;
+	}
+	.viz h1{
+		font-size: 50px;
+	}
+	
+	.viz p{
+		font-size: 40px;
+	}
+	.header {
+		margin-top: -70px;
+		width: 99.7%;
+		position: absolute;
+		transition: 0.7s;
+	}
+	.header:hover {
+		margin-top: 0;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.menu {
+		font-size: 20px;
+	}
+	.url li {
+		margin-left: 60px;
+		margin-top: -3px;
+	}
+	.about h1{
+		font-size: 60px;
+	}
+	
+	.about p{
+		font-size: 50px;
+	}
+	.viz h1{
+		font-size: 60px;
+	}
+	
+	.viz p{
+		font-size: 50px;
+	}
+}

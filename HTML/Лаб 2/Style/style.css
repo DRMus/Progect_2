@@ -1,0 +1,28 @@
+body {
+	background-color: #f0f1f4;
+}
+
+.in{
+	border: 2px double;
+	background-color: #fff;
+	display: block;
+	background-blend-mode: local;
+	border-width: 5px;
+	margin: 0 20%;
+	padding: 20px;
+	position: relative;
+}
+
+.btm{
+	cursor: pointer;
+}
+
+.textarea{
+	margin-bottom: 2px;
+	max-width: 100%;
+}
+
+.text{
+	margin-right: 20px;
+	margin-bottom: 20px;
+}

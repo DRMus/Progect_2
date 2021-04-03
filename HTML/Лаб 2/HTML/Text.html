@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<link rel="shortcut icon" href="number1.png" type="image/png">
+	<title>Лабораторная №2</title>
+	<script src = "../JS/Script.js"></script>
+	<link rel= "stylesheet" href = "../Style/style.css">
+</HEAD>
+<BODY>
+	<div class = 'in'>
+		Обработка пары элементов <br>
+		Введите размерность матрицы:<br>
+		<input type = 'text' id = 'n' name ='' value = '4'><br>
+		Введите пары элементов:<br>
+		<div class = 'text'>
+			<textarea class = 'textarea' type = 'submit' id = 'mass1' name ='' cols = '40' rows = '20' autofocus></textarea>
+			<textarea class = 'textarea' type = 'text' id = 'matr' cols = '40' rows = '20' readonly disabled></textarea><br>
+			<button type = 'button' id = 'resultCalc' class = 'btm' onclick = 'check()'>Свойства</button><br><br>
+		</div>
+		<form>
+			Симметрия: <span id = 'sim'></span><br>
+			Антисимметрия: <span id = 'antisim'></span><br>
+			Транзитивность: <span id = 'tranz'></span><br>
+			Рефлективность: <span id = 'refl'></span><br>
+			Кососимметричность: <span id = 'cos'></span><br>
+		</form>
+	</div>
+	
+</BODY>
+</HTML>
